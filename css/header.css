@@ -1,0 +1,84 @@
+body{
+    min-width: 1090px;
+    font:14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color:#333;
+    background-color: #fff;
+}
+.site-topbar{
+    height: 40px;
+    color: #b0b0b0;
+    /*font-size: 12px;*/
+    font-size: 10px;
+    background: #333;
+    position: relative;
+    z-index: 30;
+}
+.container{
+    width: 980px;
+    margin:0 auto;
+}
+.site-topbar .topbar-nav{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.site-topbar a{
+    color: #b0b0b0;
+    line-height: 40px;
+    display: inline-block;
+}
+.site-topbar .sep{
+    margin: .5em;
+    color: #424242;
+}
+.site-topbar .topbar-cart{
+    width: 120px;
+    margin-left: 15px;
+}
+.site-topbar .topbar-cart,.site-topbar .topbar-info{
+    position: relative;
+    float: right;
+    height: 40px;
+}
+.site-topbar .cart-mini{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #b0b0b0;
+    background: #424242;
+    /*position: relative;*/
+    /*z-index: 32;*/
+}
+.site-topbar .cart-mini-num{
+    margin-left: -4px;
+}
+.site-topbar .topbar-info{
+    line-height: 40px;
+}
+.site-topbar .topbar-info .link{
+    padding: 0 5px;
+    text-align: center;
+}
+.site-topbar .topbar-info .link,.site-topbar .topbar-info .message,.site-topbar .topbar-info .sep{
+    float: left;
+}
+.site-topbar .topbar-info .sep{
+    margin:0;
+}
+.site-topbar .topbar-info .message{
+    padding: 0 10px;
+}
+
+.site-topbar .cart-menu{
+     position:absolute;
+     right:0;
+     top:40px;
+     z-index:31;
+     width: 316px;
+     padding: 15px 0 0;
+     color: #424242;
+     background: #fff;
+     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+
+ }

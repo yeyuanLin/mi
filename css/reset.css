@@ -1,0 +1,90 @@
+body{
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    min-width: 1140px;
+    font-family: "Hiragino Sans GB",Tahoma,arial,宋体,sans-serif;
+    color: #404040;
+}
+
+ul,li{
+    list-style: none;
+}
+
+body,p,h1,h2,h3,h4,h5,h6,button,input,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+:link, :visited, ins, a{
+    text-decoration: none;
+}
+
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+
+a{text-decoration: none;color:#404040;}
+
+i,em{font-style: normal}
+
+button,input,optgroup,select,textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,input{
+  overflow: visible;
+}
+
+button,select {
+  text-transform: none;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+  -webkit-appearance: button;
+}
+/* 自定义样式 */
+.clearfix:after{
+	content: '';
+	display: block;  
+	clear: both;
+}
+.f-l{
+    float: left;
+}
+.f-r{
+    float: right;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.p-a{
+    position: absolute;
+}
+.p-r{
+    position: relative;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+#wasp-content-box{
+    width: 1020px;
+    margin: 0 auto;
+}
