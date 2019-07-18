@@ -50,6 +50,10 @@ body{
     /*position: relative;*/
     /*z-index: 32;*/
 }
+.site-topbar .cart-mini-active .cart-mini{
+    color:#ff6700;
+    background:#fff;
+}
 .site-topbar .cart-mini-num{
     margin-left: -4px;
 }
@@ -80,5 +84,14 @@ body{
      color: #424242;
      background: #fff;
      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+     display: none;
 
  }
+.site-topbar .cart-menu .loading {
+    margin: 5px 20px 20px;
+    text-align: center;
+}
+
+.loading {
+    padding: 20px 0;
+}

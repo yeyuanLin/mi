@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/header.css">
     <script src="../js/jquery-1.11.3.js"></script>
     <!--<script src="../js/header.js"></script>-->
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <script src="../js/iconfont.js"></script>
+
 </head>
 <body>
     <div class="site-topbar">
@@ -38,13 +41,13 @@
             </div>
             <div class="topbar-cart" id="J_miniCartTrigger">
                 <a class="cart-mini" href="#">
-                    <i class="iconfont"></i>
+                    <i class="iconfont">&#xe600;</i>
                     购物车
                     <span class="cart-mini-num">(0)</span>
                 </a>
-                <!--<div class="cart-menu">-->
-                    <!--<div class="loading">购物车还没有商品，赶紧选购吧</div>-->
-                <!--</div>-->
+                <div class="cart-menu">
+                    <div class="loading"></div>
+                </div>
             </div>
             <div class="topbar-info">
                 <a class="link" href="#">登录</a>
@@ -59,9 +62,10 @@
         </div>
     </div>
     <script>
-        $(".topbar-cart").mouseover(function(){
-            var $topbarCart = $(this);
-            // alert("lyy聪明!")
+        $(".topbar-cart").hover(function(){
+            $(".cart-mini").addClass(".cart-mini-active")
+            $(".cart-menu").fadeToggle();
+            $(".loading").text("购物车还没有商品，赶紧选购吧！");
 
         })
 
