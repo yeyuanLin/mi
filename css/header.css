@@ -1,22 +1,12 @@
-body{
-    min-width: 1090px;
-    font:14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
-    color:#333;
-    background-color: #fff;
-}
 .site-topbar{
     height: 40px;
     color: #b0b0b0;
-    /*font-size: 12px;*/
-    font-size: 10px;
+    font-size: 12px;
     background: #333;
     position: relative;
     z-index: 30;
 }
-.container{
-    width: 980px;
-    margin:0 auto;
-}
+
 .site-topbar .topbar-nav{
     float: left;
     height: 40px;
@@ -49,6 +39,12 @@ body{
     background: #424242;
     /*position: relative;*/
     /*z-index: 32;*/
+}
+.site-topbar .cart-mini i{
+    margin-right: 4px;
+    font-size: 18px;
+    line-height: 20px;
+    vertical-align: -1px;
 }
 .site-topbar .cart-mini-active .cart-mini{
     color:#ff6700;
@@ -94,4 +90,251 @@ body{
 
 .loading {
     padding: 20px 0;
+}
+
+
+
+/*site-header*/
+.site-header {
+    height: 100px;
+    /*position: absolute;*/
+    /*z-index: 20;*/
+}
+.site-header .header-logo{
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+}
+.site-header .logo {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    background-color: #ff6700;
+
+}
+
+
+/*在元素前后添加的伪元素 */
+.site-header .logo:before {
+    background: url(../image/header/mi-logo.png) no-repeat 50% 50%;
+    opacity: 1;
+    filter: alpha(opacity=100)\9;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.site-header .logo:before, .site-header .logo:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    content: '';
+    transform-origin: 50% 50%;
+    transition: all .2s;
+}
+
+.site-header .header-nav {
+    float: left;
+    width: 850px;
+}
+.site-header .nav-list{
+    width: 820px;
+    height: 88px;
+    list-style-type: none;
+    float: left;
+    padding: 12px 0 0 30px;
+    margin:0;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+}
+.site-header .nav-category {
+    position: relative;
+    float: left;
+    width: 127px;
+    padding-right: 15px;
+}
+
+/*。。。*/
+.site-header .nav-category .link-category {
+    visibility: hidden;
+}
+.site-header .nav-category .link-category {
+    display: block;
+    padding:26px 0 38px;
+    text-align: right;
+    color: #333;
+}
+.site-category {
+    /*使用js动态改变block或者none*/
+    /*display: none;*/
+    position: absolute;
+    top:88px;
+    left: -92px;
+    z-index: 21;
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+}
+.site-category-list {
+    height: 418px;
+    margin: 0;
+    padding: 20px 0;
+    list-style-type: none;
+    border: 1px solid #ff6700;
+    color: #424242;
+    background: #fff;
+}
+.site-category-list .title {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    height: 42px;
+    line-height: 42px;
+    color: #424242;
+}
+.site-category-list .title i {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #e0e0e0;
+}
+.site-category-list .children-col-4 {
+    width: 992px;
+}
+
+.site-category-list .children {
+    /*使用js动态改变隐藏状态*/
+    display: none;
+    position: absolute;
+    left: 234px;
+    top: 0;
+    z-index: 24;
+    height: 458px;
+    border:1px solid #e0e0e0;
+    border-left: 0;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+
+.site-category-list .children-col-4 .children-list-col {
+    width: 248px;
+}
+.site-category-list .children-list-col {
+    float: left;
+}
+.site-category-list .children-list {
+    height: 458px;
+    margin:0;
+    padding: 2px 0;
+    list-style-type: none;
+}
+.site-category-list .children-list li {
+    width: 265px;
+    height: 76px;
+    float: left;
+    position: relative;
+}
+.site-category-list .children-list .link {
+    display: block;
+    padding: 18px 20px;
+    line-height: 40px;
+    color: #333;
+    transition: color .2s;
+}
+.site-category-list .children-list .thumb{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.site-category-list .children-list .text {
+    line-height: 40px;
+}
+
+
+
+
+/*nav-item*/
+.site-header .nav-item {
+    float: left;
+}
+.site-header .nav-item  .link {
+    display: block;
+    padding : 26px 10px 38px;
+    color: #333;
+}
+.site-header .nav-item .item-children {
+    /*display: none;*/
+}
+.site-header .container {
+    position: relative;
+}
+
+
+
+
+
+/*搜索框*/
+.site-header .header-search {
+    margin-top: 25px;
+    float: right;
+    width: 296px;
+}
+.site-header .search-form {
+    position: relative;
+    width: 296px;
+    height:50px;
+}
+.site-header .search-text {
+    position: absolute;
+    top: 0;
+    right: 51px;
+    z-index: 1;
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px 0 0 10px;
+    font-size: 14px;
+    line-height: 48px;
+    outline: 0;
+    /*transition: all .2s;*/
+}
+.site-header .search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 52px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 10px 10px 0;
+    font-size: 24px;
+    line-height: 24px;
+    background: #fff;
+    color: #616161;
+    outline: 0;
+    /*transition: all .2s;*/
+}
+
+.site-header .search-hot-words {
+    position: absolute;
+    top: 14px;
+    right: 62px;
+    z-index: 2;
+    text-align: right;
+}
+.site-header .search-hot-words a {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 5px;
+    font-size: 12px;
+    background: #eee;
+    color: #757575;
 }
