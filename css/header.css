@@ -180,6 +180,8 @@
     font-size: 14px;
 }
 .site-category-list {
+    /*使用js动态改变block的状态*/
+    display: none;
     height: 418px;
     margin: 0;
     padding: 20px 0;
@@ -323,6 +325,8 @@
     /*transition: all .2s;*/
 }
 
+
+/*当元素focus时，隐藏*/
 .site-header .search-hot-words {
     position: absolute;
     top: 14px;

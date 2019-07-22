@@ -1,0 +1,107 @@
+.home-hero-container {
+    position: relative;
+    z-index: 10;
+}
+.home-hero {
+    position: relative;
+    margin-bottom: 26px;
+}
+.home-hero-slider {
+    position: relative;
+    height: 460px;
+    overflow: hidden;
+}
+.home-hero-slider .slide {
+    width: 1226px;
+    height: 460px;
+}
+.home-hero-slider .slide a {
+    display: block;
+}
+.home-hero-slider .slide img {
+    width: 1226px;
+    height: 460px;
+}
+
+.home-hero-sub {
+    margin-top: 14px;
+}
+.row {
+    margin-left: -14px;
+}
+.span4 {
+    width: 234px;
+}
+.home-channel-list {
+    margin:0;
+    padding: 3px;
+    list-style-type: none;
+    font-size: 12px;
+    text-align: center;
+    background: #5f5750;
+}
+.home-channel-list:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.home-channel-list li {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 82px;
+    padding: 0 3px;
+}
+.home-channel-list a {
+    display: block;
+    padding-top: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(255,255,255,.7);
+}
+.home-channel-list i {
+    display: block;
+    height: 24px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+
+.span16 {
+    width: 978px;
+}
+.home-promo-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.home-promo-list li {
+    float: left;
+    width: 316px;
+    height: 170px;
+    margin-left: 15px;
+}
+.home-promo-list li.first {
+    margin-left: 0;
+}
+.home-promo-list a {
+    display: block;
+    height: 170px;
+}
+.home-promo-list img {
+    width: 100%;
+}
+
+/*开始闪购*/
+.hide {
+    display: none;!important;
+}
+
+/*结束闪购*/
+.home-banner-box {
+    height: 120px;
+    /*图片不管用*/
+    background: url("//i1.mifile.cn/f/i/2014/cn/placeholder-220.png") no-repeat center center;
+}
