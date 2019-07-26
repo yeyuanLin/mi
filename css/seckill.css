@@ -58,12 +58,15 @@
 .seckill-nav .active {
     background: #f1393a;
 }
-
+.seckill-goods .active {
+    display: block;
+}
 .seckill-goods ul {
+    display: none;
     margin-right: -13px;
 }
 .seckill-goods li{
-    width: 397px;
+    width: 400px;
     height: 190px;
     background: #fff;
     float: left;

@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77dc494e-e0b0-490a-99d3-12d421313fef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/seckill.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/seckill.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/seckill.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/seckill.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/seckill.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/seckill.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,14 +21,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46800596">
+    <splitter split-orientation="horizontal" split-proportion="0.81032664">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/html/seckill.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="297">
-                  <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+                <state relative-caret-position="173">
+                  <caret line="146" selection-start-line="146" selection-end-line="146" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/css/seckill.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="464">
+                  <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -32,12 +45,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/seckill.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="26">
-                  <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+                <state relative-caret-position="391">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
                 </state>
               </provider>
             </entry>
@@ -71,8 +84,10 @@
       <find>srcset=&quot;.*?&quot;</find>
       <find>her</find>
       <find>nav-item</find>
-      <find>clearfix</find>
       <find>info</find>
+      <find>ul</find>
+      <find>clearfix</find>
+      <find>00</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,11 +111,17 @@
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/header.html" />
         <option value="$PROJECT_DIR$/css/header.css" />
-        <option value="$PROJECT_DIR$/css/seckill.css" />
-        <option value="$PROJECT_DIR$/html/seckill.html" />
         <option value="$PROJECT_DIR$/js/seckill.js" />
+        <option value="$PROJECT_DIR$/html/seckill.html" />
+        <option value="$PROJECT_DIR$/css/seckill.css" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-55" />
@@ -142,6 +163,12 @@
             <path>
               <item name="mi" type="b2602c69:ProjectViewProjectNode" />
               <item name="mi" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="seckill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mi" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -153,6 +180,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -165,7 +193,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -216,17 +244,18 @@
       <workItem from="1564034767716" duration="589000" />
       <workItem from="1564046695833" duration="14759000" />
       <workItem from="1564137546969" duration="8427000" />
+      <workItem from="1564153750336" duration="7366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108339000" />
+    <option name="totallyTimeSpent" value="115705000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24404761" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14330874" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -238,7 +267,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2967213" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29609543" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -339,24 +368,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/seckill.css">
+    <entry file="file://$PROJECT_DIR$/js/seckill.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+        <state relative-caret-position="391">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/seckill.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+        <state relative-caret-position="173">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/seckill.js">
+    <entry file="file://$PROJECT_DIR$/css/seckill.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="464">
+          <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
         </state>
       </provider>
     </entry>

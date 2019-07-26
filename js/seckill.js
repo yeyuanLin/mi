@@ -1,8 +1,19 @@
-//将事件绑定在父级ul上
-(function(){$("ul.tabs li").click(function(){
+//查找出发事件的元素，绑定事件函数
+(function(){$("#tabs li").click(function(){
     var $tab = $(this);
-    if($tab){
-        $tab.addClass("active")
-            .siblings().removeClass("active");
-    }
-})})();
+
+    var index = $("#tabs li").index(this);
+    // 查找要修改的元素   根据索引获取li相应的元素
+    $("#lists ul").eq(index)
+        .addClass("clearfix active")
+        .siblings().removeClass("active");
+
+    $tab.addClass("active")
+        .siblings().removeClass("active");
+    })
+})();
+
+
+
+
+
