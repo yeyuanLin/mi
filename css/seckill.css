@@ -15,7 +15,14 @@
     margin-top: 19px;
 }
 .seckill-nav {
+    width: 1226px;
     margin: -68px 0 22px;
+    border:1px solid #f00;
+}
+.seckill-navfixed {
+    position: fixed;
+    top:60px;
+
 }
 .seckill-nav ul{
     height: 68px;
@@ -57,6 +64,9 @@
 }
 .seckill-nav .active {
     background: #f1393a;
+}
+.seckill-goods {
+    border: 1px solid pink;
 }
 .seckill-goods .active {
     display: block;

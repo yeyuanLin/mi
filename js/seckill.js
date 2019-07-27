@@ -1,5 +1,5 @@
 //查找出发事件的元素，绑定事件函数
-(function(){$("#tabs li").click(function(){
+(function(){$("#tabs li").click(function(e){
     var $tab = $(this);
 
     var index = $("#tabs li").index(this);
@@ -12,6 +12,19 @@
         .siblings().removeClass("active");
     })
 })();
+
+//document.body.scrollTop   老版本浏览器
+//window.pageYoffset        苹果的浏览器
+window.onscroll = function () {
+    //解决scrollTop浏览器兼容性问题
+    var scrollTop = document.documentElement.scrollTop || window.pageYffset || document.body.scrollTop;
+    if(scrollTop >= 260){
+        $("#seckill-nav").addClass("seckill-navfixed");
+    }else{
+        $("#seckill-nav").removeClass("seckill-navfixed");
+    }
+    // console.log(scrollTop);
+}
 
 
 
