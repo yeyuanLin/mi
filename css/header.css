@@ -64,6 +64,8 @@
 .site-topbar a.download:hover i{
     color: #323232;
 }
+
+/*购物车*/
 .site-topbar .topbar-cart{
     width: 120px;
     margin-left: 15px;
@@ -77,6 +79,7 @@
     float: right;
     height: 40px;
 }
+
 .site-topbar .cart-mini{
     display: block;
     height: 40px;
@@ -84,6 +87,7 @@
     text-align: center;
     color: #b0b0b0;
     background: #424242;
+    /*解决 .site-topbar .cart-menu box-shadow的问题？？？？*/
     /*position: relative;*/
     /*z-index: 32;*/
 }
@@ -100,6 +104,104 @@
 .site-topbar .cart-mini-num{
     margin-left: -4px;
 }
+
+
+.site-topbar .cart-menu{
+    position:absolute;
+    right:0;
+    top:40px;
+    z-index:31;
+    width: 316px;
+    padding: 15px 0 0;
+    color: #424242;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    display: none;
+
+}
+/*鼠标悬停的状态*/
+.site-topbar .pop {
+    width: 316px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 40px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    /*display: none;*/
+}
+/*鼠标悬停的状态*/
+.site-topbar :hover .pop{
+    display: block;
+}
+.site-topbar .no-good {
+    text-align: center;
+    font-size: 13px;
+}
+/*当购物车有商品时*/
+.site-topbar .pop .list {
+    border:1px solid red;
+    padding: 0 20px;
+}
+.site-topbar .pop .list .pic {
+    float: left;
+}
+.site-topbar .pop .list img{
+    width: 60px;
+    height: 60px;
+}
+.site-topbar .pop .list li {
+    border-bottom:1px solid #e0e0e0;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.site-topbar .pop .list .tex {
+    width: 130px;
+    float: left;
+    line-height: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.site-topbar .pop .list .num {
+    float: right;
+}
+.site-topbar .pop .list .num h4 {
+    margin-top: 12px;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.site-topbar .pop .list .num i {
+    font-style: normal;
+    cursor: pointer;
+    color:#aaa;
+}
+.site-topbar .pop .list .num i:hover{
+    color:#333;
+}
+
+
+    /*加载状态*/
+.site-topbar .cart-menu .loading {
+    margin: 5px 20px 20px;
+    text-align: center;
+}
+.loading {
+    padding: 20px 0;
+}
+.loader,.loader:before,.loader:after {
+    transform-origin: 50% 50%;
+    animation-name: loader;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+
+
+/*用户登录注册*/
 .site-topbar .topbar-info{
     line-height: 40px;
 }
@@ -107,7 +209,7 @@
     padding: 0 5px;
     text-align: center;
 }
-.site-topbar .topbar-info .link,.site-topbar .topbar-info .message,.site-topbar .topbar-info .sep{
+.site-topbar .topbar-info .link, .site-topbar .topbar-info .user, .site-topbar .topbar-info .message, .site-topbar .topbar-info .sep {
     float: left;
 }
 .site-topbar .topbar-info .sep{
@@ -117,27 +219,66 @@
     padding: 0 10px;
 }
 
-.site-topbar .cart-menu{
-     position:absolute;
-     right:0;
-     top:40px;
-     z-index:31;
-     width: 316px;
-     padding: 15px 0 0;
-     color: #424242;
-     background: #fff;
-     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-     display: none;
+/*登录后的用户*/
+.site-topbar .topbar-info .user {
+    width: 110px;
+    padding: 0;
+    white-space: nowrap;
+    position: relative;
 
- }
-.site-topbar .cart-menu .loading {
-    margin: 5px 20px 20px;
+}
+.site-topbar .topbar-info .user a:hover {
+    color: #ff6700;
+    background: #fff;
+}
+.site-topbar .user-name {
+    position:relative;
+    z-index: 5;
+    display: block;
+    width: 120px;
+    height: 40px;
     text-align: center;
 }
-
-.loading {
-    padding: 20px 0;
+.site-topbar .user-name .name {
+    display: inline-block;
+    width: auto;
+    max-width: 75px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: text-bottom;
 }
+.site-topbar .user-name i {
+    font-size: 24px;
+    height: 24px;
+    vertical-align: 9px;
+}
+.site-topbar .user-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 3;
+    width: 120px;
+    margin: 0;
+    padding: 7px 0;
+    list-style-type: none;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+.site-topbar .user-menu a {
+    display: block;
+    padding: 3px 30px;
+    line-height: 2;
+}
+.site-topbar .message i{
+    font-style: normal;
+}
+.site-topbar .topbar-info .link-order {
+    width: 70px;
+}
+
+
 
 
 
